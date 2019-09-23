@@ -12,6 +12,6 @@ script:
   # Install libraries only needed by tests
   - pip install requests
   # Run tests
-  - python -m pytest
+  - sh .ci/integration.sh
 after_success:
   - echo "tests passed"
