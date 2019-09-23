@@ -11,6 +11,7 @@ install:
 script:
   # Install libraries only needed by tests
   - pip install requests
+  - pip install pycodestyle
   # Run tests
   - sh .ci/integration.sh
 after_success:
